@@ -28,11 +28,11 @@ public class Prefix {
             }
             if (counter == array.length){
                 break;
+            }else {
+                prefix = prefix.substring(0, prefix.length()-1);
+
             }
-            StringBuffer stringBuffer = new StringBuffer(prefix);
-            int index = prefix.length();
-            stringBuffer.delete(index-1, index-1);
-            prefix = stringBuffer.toString();
+            counter = 0;
 
         }
         return prefix;
